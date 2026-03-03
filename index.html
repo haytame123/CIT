@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT - Club Informatique & Télécommunications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">CIT</h1>
+    <nav>
+        <ul>
+            <li><button class="nav-btn active" data-page="home">🏠</button></li>
+            <li><button class="nav-btn" data-page="about">👥</button></li>
+            <li><button class="nav-btn" data-page="activities">💻</button></li>
+            <li><button class="nav-btn" data-page="projects">🚀</button></li>
+            <li><button class="nav-btn" data-page="register">📝</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section id="home" class="page active">
+    <h2>Bienvenue au Club Informatique & Télécommunications</h2>
+    <p>
+        Le Club Informatique & Télécommunications (CIT) est une communauté dynamique
+        d’étudiants passionnés par les technologies numériques, l’innovation et
+        le développement de solutions intelligentes. Notre objectif principal est
+        de créer un environnement stimulant où chaque membre peut développer ses
+        compétences techniques et personnelles.
+    </p>
+    <p>
+        À travers nos formations, projets collaboratifs et compétitions, nous
+        préparons les étudiants à devenir des ingénieurs compétents et prêts
+        à relever les défis du monde professionnel. Rejoindre le CIT, c’est
+        intégrer une équipe ambitieuse tournée vers l’excellence.
+    </p>
+</section>
+
+<section id="about" class="page">
+    <h2>À propos du CIT</h2>
+    <p>
+        Fondé par des étudiants motivés et visionnaires, le CIT a pour mission
+        de promouvoir la culture technologique au sein de l’INPT. Nous croyons
+        que la pratique et l’innovation sont les clés de la réussite.
+    </p>
+    <p>
+        Notre club met l’accent sur le travail d’équipe, la discipline et
+        l’apprentissage continu. Nous organisons régulièrement des ateliers,
+        des formations spécialisées et des événements technologiques afin
+        d’encourager la créativité et l’esprit d’initiative.
+    </p>
+    <ul>
+        <li>🎯 Excellence académique et technique</li>
+        <li>🚀 Innovation et créativité</li>
+        <li>🤝 Collaboration et esprit d’équipe</li>
+        <li>💡 Leadership et responsabilité</li>
+    </ul>
+</section>
+
+<section id="activities" class="page">
+    <h2>Nos Activités</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>💻 Développement Web</h3>
+            <p>
+                Nous proposons des formations complètes en HTML, CSS, JavaScript
+                et frameworks modernes. Les membres participent à des projets
+                réels afin d’acquérir une expérience pratique et professionnelle.
+            </p>
+        </div>
+        <div class="card">
+            <h3>📡 Réseaux & Télécommunications</h3>
+            <p>
+                Des ateliers spécialisés permettent aux étudiants de maîtriser
+                les technologies réseau, la configuration d’équipements Cisco,
+                ainsi que les bases de la sécurité des infrastructures.
+            </p>
+        </div>
+        <div class="card">
+            <h3>🔐 Cybersécurité</h3>
+            <p>
+                Initiation au hacking éthique, protection des systèmes et
+                compréhension des vulnérabilités. Nos membres développent une
+                vision stratégique de la sécurité informatique.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="page">
+    <h2>Nos Projets Innovants</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>📱 Applications Mobiles</h3>
+            <p>
+                Conception et développement d’applications mobiles destinées
+                à résoudre des problématiques étudiantes et professionnelles.
+            </p>
+        </div>
+        <div class="card">
+            <h3>🌐 Plateformes Web</h3>
+            <p>
+                Création de plateformes numériques performantes intégrant
+                design moderne et fonctionnalités avancées.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="register" class="page">
+    <h2>Rejoindre le CIT</h2>
+    <p>
+        Vous êtes passionné par la technologie et souhaitez développer vos
+        compétences dans un environnement motivant ? Remplissez le formulaire
+        ci-dessous et devenez membre du CIT.
+    </p>
+    <form id="registerForm">
+        <input type="text" id="name" placeholder="Nom complet">
+        <input type="email" id="email" placeholder="Email">
+        <select id="field">
+            <option value="">Choisir domaine d'intérêt</option>
+            <option>Développement</option>
+            <option>Réseaux</option>
+            <option>Intelligence Artificielle</option>
+            <option>Cybersécurité</option>
+        </select>
+        <textarea id="message" placeholder="Expliquez votre motivation"></textarea>
+        <button type="submit">S'inscrire</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
